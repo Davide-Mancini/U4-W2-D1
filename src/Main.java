@@ -21,8 +21,8 @@ public class Main {
 
 
             if( posizione < 0 || posizione>= array.length ){
-                System.out.println("psozione non raggiungibile nell'array");
-                continue;
+                throw new ArrayIndexOutOfBoundsException("valore non recuperabile");
+               
             }
             System.out.println("ora inserisci valore da inserire o 0 per uscire");
             int input;
@@ -52,7 +52,7 @@ public class Main {
             scanner.close();
         }
         //--------------------------------ESERCIZIO 3-----------------------------------------------
-        
+
 
     }
 }
